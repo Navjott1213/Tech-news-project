@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+header {
+    background: linear-gradient(90deg, #1e3a8a, #9333ea);
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #020617;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: #cbd5f5;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(45deg, #1e293b, #312e81);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.extra-news {
+    background: #020617;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact {
+    margin: 20px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #9333ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
